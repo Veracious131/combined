@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-// const PORT = 3000
 const dotenv = require("dotenv")
 const router = require('./routes/user.routes')
 const mongoose  = require('mongoose')
@@ -8,10 +7,10 @@ dotenv.config()
 
 const cors = require("cors")
 
-const URI = "mongodb+srv://Veracious:Veracious131@cluster0.xltsrgz.mongodb.net/reacttest?retryWrites=true&w=majority&appName=Cluster0"
+
 
 const PORT = process.env.PORT
-// const URI = process.env.URI
+const URI = process.env.URI
 
  // to get back our details from user
  app.use(express.urlencoded({extended:true}));
