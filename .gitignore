@@ -9,7 +9,8 @@ lerna-debug.log*
 
 Client/Client-side/node_modules
 Server/node_modules
-# Server/.env
+Server/.env
+Server/.env.*
 dist
 dist-ssr
 *.local
